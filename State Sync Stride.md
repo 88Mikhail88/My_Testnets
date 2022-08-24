@@ -8,10 +8,10 @@ strided tendermint unsafe-reset-all --home $HOME/.stride
 
 
 SEEDS=""
-PEERS="2b4f14634bf09b35b5cdc3630717cc6a5ccd2ee5@135.181.197.254:26657"
+PEERS="2b4f14634bf09b35b5cdc3630717cc6a5ccd2ee5@135.181.197.254:26656"
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.stride/config/config.toml
 
-SNAP_RPC="http://135.181.197.254:26656"
+SNAP_RPC="http://135.181.197.254:26657"
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT)); \
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
