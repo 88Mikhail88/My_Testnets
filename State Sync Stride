@@ -1,3 +1,5 @@
+State Sync Stride --chain-id STRIDE-TESTNET-4 v.0.4.1
+
 sudo systemctl stop strided
 strided tendermint unsafe-reset-all --home $HOME/.stride
 
