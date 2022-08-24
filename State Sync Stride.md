@@ -1,5 +1,6 @@
 # State Sync Stride --chain-id STRIDE-TESTNET-4 v.0.4.1
 
+```
 sudo systemctl stop strided
 strided tendermint unsafe-reset-all --home $HOME/.stride
 
@@ -21,3 +22,4 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.stride/config/config.toml
 
 sudo systemctl restart strided
 journalctl -u strided -f -o cat
+```
