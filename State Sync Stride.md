@@ -1,3 +1,5 @@
+# [Node installation instructions](https://nodes.guru/stride)
+
 # State Sync Stride --chain-id STRIDE-TESTNET-4 v.0.4.1
 
 ```
