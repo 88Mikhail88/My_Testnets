@@ -2,7 +2,7 @@
 
 ```
 sudo systemctl stop gaiad
-gaiad tendermint unsafe-reset-all --home $HOME/.gaiad
+gaiad tendermint unsafe-reset-all --home $HOME/.gaia
 
 
 SEEDS=""
