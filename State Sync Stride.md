@@ -30,3 +30,16 @@ sudo systemctl restart strided
 # check logs
 journalctl -u strided -f -o cat
 ```
+
+## Pruning config
+
+```
+recent=100
+every=0
+interval=10
+
+sed -i.back "s/pruning *=.*/pruning = \"custom\"/g" $HOME/.stride/config/app.toml
+sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"$recent\"/g" $HOME/.stride/config/app.toml
+sed -i "s/pruning-keep-every *=.*/pruning-keep-every = \"$every\"/g" $HOME/.stride/config/app.toml
+sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.stride/config/app.toml
+```
