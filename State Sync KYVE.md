@@ -28,3 +28,15 @@ sudo systemctl restart kyved
 # check logs
 journalctl -u kyved -f -o cat
 ```
+
+## Pruning config
+```
+recent=100
+every=0
+interval=10
+
+sed -i.back "s/pruning *=.*/pruning = \"custom\"/g" $HOME/.kyve/config/app.toml
+sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"$recent\"/g" $HOME/.kyve/config/app.toml
+sed -i "s/pruning-keep-every *=.*/pruning-keep-every = \"$every\"/g" $HOME/.kyve/config/app.toml
+sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.kyve/config/app.toml
+```
