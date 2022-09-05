@@ -28,3 +28,16 @@ sudo systemctl restart gaiad
 # check logs
 journalctl -u gaiad -f -o cat
 ```
+
+## Pruning config
+
+```
+recent=100
+every=0
+interval=10
+
+sed -i.back "s/pruning *=.*/pruning = \"custom\"/g" $HOME/.gaia/config/app.toml
+sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"$recent\"/g" $HOME/.gaia/config/app.toml
+sed -i "s/pruning-keep-every *=.*/pruning-keep-every = \"$every\"/g" $HOME/.gaia/config/app.toml
+sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.gaia/config/app.toml
+```
