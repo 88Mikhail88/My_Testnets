@@ -40,3 +40,6 @@ sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"$recent\"/g" $HOME/.k
 sed -i "s/pruning-keep-every *=.*/pruning-keep-every = \"$every\"/g" $HOME/.kyve/config/app.toml
 sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.kyve/config/app.toml
 ```
+
+## Ports used:
+```6060 | 26656 | 26657 | 9090 | 9091 ```
