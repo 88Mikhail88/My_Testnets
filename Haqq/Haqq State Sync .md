@@ -1,4 +1,4 @@
-# State Sync Haqq --chain-id haqq_54211-2 v1.0.3
+# State Sync Haqq --chain-id haqq_54211-2
 
 ```
 # stop node
