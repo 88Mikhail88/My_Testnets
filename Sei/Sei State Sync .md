@@ -1,4 +1,4 @@
-# State Sync Sei --chain-id atlantic-1 v1.1.1beta
+# State Sync Sei
 
 ```
 # stop node
