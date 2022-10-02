@@ -1,4 +1,4 @@
-# State Sync Gaia --chain-id GAIA
+# State Sync Gaia
 
 ```
 # stop node
