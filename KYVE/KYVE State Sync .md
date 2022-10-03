@@ -1,4 +1,4 @@
-# State Sync KYVE --chain-id korellia v0.6.4
+# State Sync KYVE --chain-id korellia
 
 ```
 # stop node
