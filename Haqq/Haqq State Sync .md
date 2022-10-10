@@ -43,3 +43,12 @@ sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.haqqd
 
 ## Ports used:
 ```26657 | 6060 | 26656 | 9090 | 9091 ```
+
+## Upgrade:
+```
+cd && rm -rf haqq
+git clone https://github.com/haqq-network/haqq.git
+cd haqq && git checkout v1.1.0
+make build
+sudo mv build/haqqd $(which haqqd)
+sudo systemctl restart haqqd```
