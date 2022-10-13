@@ -27,6 +27,9 @@ sudo systemctl restart gaiad
 
 # check logs
 journalctl -u gaiad -f -o cat
+
+# disable State Sync after node synchronization
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.gaia/config/config.toml
 ```
 
 ## Pruning config
