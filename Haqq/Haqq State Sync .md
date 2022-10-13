@@ -27,8 +27,10 @@ sudo systemctl restart haqqd
 
 # check logs
 journalctl -u haqqd -f -o cat
-```
 
+# disable State Sync after node synchronization
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.haqqd/config/config.toml
+```
 ## Pruning config
 ```bash
 recent=100
@@ -40,7 +42,6 @@ sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"$recent\"/g" $HOME/.h
 sed -i "s/pruning-keep-every *=.*/pruning-keep-every = \"$every\"/g" $HOME/.haqqd/config/app.toml
 sed -i "s/pruning-interval *=.*/pruning-interval = \"$interval\"/g" $HOME/.haqqd/config/app.toml
 ```
-
 ## Ports used:
 ```26657 | 6060 | 26656 | 9090 | 9091 ```
 
