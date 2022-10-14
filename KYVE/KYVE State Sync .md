@@ -27,6 +27,9 @@ sudo systemctl restart kyved
 
 # check logs
 journalctl -u kyved -f -o cat
+
+# disable State Sync after node synchronization
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.kyve/config/config.toml
 ```
 
 ## Pruning config
