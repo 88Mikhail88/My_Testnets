@@ -27,6 +27,9 @@ sudo systemctl restart seid
 
 # check logs
 journalctl -u seid -f -o cat
+
+# disable State Sync after node synchronization
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.sei/config/config.toml
 ```
 
 ## Pruning config
