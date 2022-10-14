@@ -29,6 +29,9 @@ sudo systemctl restart strided
 
 # check logs
 journalctl -u strided -f -o cat
+
+# disable State Sync after node synchronization
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.stride/config/config.toml
 ```
 
 ## Pruning config
