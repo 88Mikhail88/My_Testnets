@@ -1,6 +1,6 @@
 # State Sync Haqq --chain-id haqq_54211-2
 
-## Explorer http://162.55.56.199/haqq
+### Explorer: http://162.55.56.199/haqq
 
 ```bash
 # stop node
