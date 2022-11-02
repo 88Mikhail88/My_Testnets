@@ -1,5 +1,5 @@
 ### Change:
-> $password  $cli  $valoper_address  $wallet_name 
+> $password  $valoper_address  $wallet_name 
 >
 > sleep 300s
 
