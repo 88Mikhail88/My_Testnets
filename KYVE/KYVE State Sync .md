@@ -1,6 +1,6 @@
 # State Sync KYVE --chain-id korellia
 
-```
+```bash
 # stop node
 sudo systemctl stop kyved
 kyved tendermint unsafe-reset-all --home $HOME/.kyve
@@ -33,7 +33,7 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.kyve/con
 ```
 
 ## Pruning config
-```
+```bash
 recent=100
 every=0
 interval=10
