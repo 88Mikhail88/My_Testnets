@@ -25,4 +25,4 @@ journalctl -u defundd -f -o cat
 ```
 ### You should see
 
-![]()
+![](https://github.com/88Mikhail88/My_Images/blob/main/Defund/Screenshot_21.png)
