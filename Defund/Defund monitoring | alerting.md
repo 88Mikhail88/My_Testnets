@@ -69,7 +69,7 @@ docker logs -f --tail 20 tenderduty
 
 ![](https://github.com/88Mikhail88/My_Images/blob/main/Defund/Screenshot_1.png)
 
-![](https://github.com/88Mikhail88/My_Images/blob/main/Defund/Screenshot_21.png)
+![](https://github.com/88Mikhail88/My_Images/blob/main/Defund/Screenshot_22.png)
 
 ![](https://github.com/88Mikhail88/My_Images/blob/main/Defund/Screenshot_2.png)
 
