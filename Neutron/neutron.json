@@ -1,0 +1,19 @@
+{
+    "chain_name": "NEUTRON",
+    "coingecko": "",
+    "api": ["https://neutron.api.t.stavr.tech/"],
+    "rpc": ["http://neutron.rpc.t.stavr.tech:11057/"],
+    "snapshot_provider": "",
+    "sdk_version": "0.45.5",
+    "coin_type": "118",
+    "min_tx_fee": "200",
+    "addr_prefix": "neutron",
+    "logo": "/logos/logo_neutron.png",
+    "assets": [{
+        "base": "untrn",
+        "symbol": "NTRN",
+        "exponent": "6",
+        "coingecko_id": "",
+        "logo": "/logos/logo_neutron.png"
+    }]
+}
