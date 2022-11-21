@@ -2,7 +2,7 @@
 
 ### Update packages, install dependencies
 ```bash
-cd $HOME
+ $HOME
 sudo apt update && sudo apt upgrade -y
 sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop -y < "/dev/null"
 ```
