@@ -23,7 +23,7 @@ sudo systemctl stop $cli
 cd ~/.$cli/config/priv_validator_key.json && rm -rf priv_validator_key.json
 ```
 ### Transfer priv_validator_key.json to new server
-> you can use [winscp[](https://winscp.net/eng/download.php), [mobaxterm](https://mobaxterm.mobatek.net/download-home-edition.html) or [filezilla](https://filezilla.ru/)
+> you can use [winscp](https://winscp.net/eng/download.php), [mobaxterm](https://mobaxterm.mobatek.net/download-home-edition.html) or [filezilla](https://filezilla.ru/)
 
 ### Start service on a new server
 ```bash
