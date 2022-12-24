@@ -62,7 +62,7 @@ After=network.target
 [Service]
 User=$USER
 Type=simple
-ExecStart=$/usr/local/bin/nibid start
+ExecStart=/usr/local/bin/nibid start
 Restart=on-failure
 LimitNOFILE=65535
 
