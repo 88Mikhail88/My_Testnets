@@ -256,4 +256,53 @@ sudo systemctl stop axelard
 ```
 > You need to change the port --metrics ```$HOME/.kysor/valaccounts/uniswap.toml``` before running in the next pool
 
-### The remaining pools are launched in the same way moonbeam pool
+### Create a valaccount new pool
+```bash
+./kysor valaccounts create \
+--name bnb \
+--pool 23 \
+--storage-priv "$(cat /root/arweave.json)" \
+--verbose \
+--metrics
+```
+### Creating service file
+```bash
+echo "[Unit]
+Description=Protocol node
+After=network.target
+
+[Service]
+User=$USER
+Type=simple
+ExecStart=/usr/local/bin/kysor start --valaccount bnb
+Restart=on-failure
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/bnbd.service
+sudo tee <<EOF >/dev/null /etc/systemd/journald.conf
+Storage=persistent
+EOF
+```
+
+### Run node in BNB pool and watch logs.
+> In logs you will see your ```Valladdress``` and ```Valname```. Using these data you need to authorize yourself [app.kyve.network](https://app.kyve.network/#/pools) 
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable bnbdd
+sudo systemctl restart bnbdd
+journalctl -u bnbdd -f -o cat
+
+
+sudo systemctl stop bnbd
+```
+> You need to change the port --metrics ```$HOME/.kysor/valaccounts/bnb.toml``` before running in the next pool
+```bash
+cd .kysor/valaccounts/
+nano avalanche.toml
+
+# For example 8182 etc, save changes and restart
+
+sudo systemctl restart bnbd
+journalctl -u bnbd -f -o cat
+```
