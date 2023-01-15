@@ -28,6 +28,11 @@ sudo systemctl restart kyved
 # check logs
 journalctl -u kyved -f -o cat
 
+# If it fails to connect
+
+nano .kyve/config/app.toml
+#edit snapshot-interval = 1000
+
 # disable State Sync after node synchronization
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" $HOME/.kyve/config/config.toml
 ```
