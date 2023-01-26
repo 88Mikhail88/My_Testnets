@@ -8,7 +8,7 @@ sudo apt install unzip curl wget -y
 ```
 ### Install npm | nodejs
 ```bash
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - && \
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - && \
 sudo apt-get install nodejs -y && \
 echo -e "\nnodejs > $(node --version).\nnpm  >>> v$(npm --version).\n"
 ```
