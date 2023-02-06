@@ -306,3 +306,25 @@ nano avalanche.toml
 sudo systemctl restart bnbd
 journalctl -u bnbd -f -o cat
 ```
+## UPD KYSOR 1.0.0-beta.5
+
+### Install Kysor
+```bash
+wget https://github.com/KYVENetwork/kyvejs/releases/download/%40kyve%2Fkysor%401.0.0-beta.5/kysor-linux-x64.zip
+unzip kysor-linux-x64.zip
+mv kysor-linux-x64 kysor
+chmod +x kysor
+sudo mv kysor /usr/local/bin/kysor
+```
+
+### Edit config.toml
+```bash
+nano .kysor/config.toml
+# change
+network = "korellia" -->> chainId = "korellia"
+# add
+rpc = "https://rpc.korellia.kyve.network"
+rest = "https://api.korellia.kyve.network"
+```
+
+### Restart your pools
