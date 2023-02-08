@@ -328,3 +328,16 @@ rest = "https://api.korellia.kyve.network"
 ```
 
 ### Restart your pools
+
+## UPD KYSOR 1.0.0-beta.7
+
+### Install Kysor
+```bash
+wget https://github.com/KYVENetwork/kyvejs/releases/download/%40kyve%2Fkysor%401.0.0-beta.7/kysor-linux-x64.zip
+unzip kysor-linux-x64.zip
+mv kysor-linux-x64 kysor
+chmod +x kysor
+sudo mv kysor /usr/local/bin/kysor
+```
+
+### Restart your pools
