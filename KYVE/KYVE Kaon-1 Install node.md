@@ -31,7 +31,7 @@ rm kyved_linux_amd64.tar.gz
 kyved init <<node_name>> --chain-id kaon-1
 wget https://raw.githubusercontent.com/KYVENetwork/networks/main/kaon-1/genesis.json
 mv genesis.json ~/.kyve/config/genesis.json
-wget -O $HOME/.kyve/config/addrbook.json https://github.com/88Mikhail88/My_Testnets/blob/main/KYVE/addrbook.json
+wget -O $HOME/.kyve/config/addrbook.json https://raw.githubusercontent.com/88Mikhail88/My_Testnets/main/KYVE/addrbook.json
 ```
 ### Adding seeds and peers
 ```bash
