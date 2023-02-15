@@ -35,7 +35,7 @@ wget -O $HOME/.kyve/config/addrbook.json https://raw.githubusercontent.com/88Mik
 ```
 ### Adding seeds and peers
 ```bash
-peers="7820d73c4449e0e4328c9fc4437b00aef8de33c2@5.161.195.113:26656"
+peers="7820d73c4449e0e4328c9fc4437b00aef8de33c2@5.161.195.113:26656,5f54a853e7224ad32cbe4e5cddead24b512b629f@51.159.191.220:28656,08a80bccd4c11803e471ce6257090add30e5d7f2@136.243.148.246:28656,cabe6a63f30100bc66ee4f2a20cb9afa8bc8ade9@185.213.25.129:46656,f5a6484b239fdbe3f9c9bad889d737e8a9f153c6@149.102.140.248:46656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.kyve/config/config.toml
 ```
 ### Config pruning
