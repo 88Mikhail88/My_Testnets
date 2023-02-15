@@ -36,7 +36,7 @@ wget -O $HOME/.kyve/config/addrbook.json https://github.com/88Mikhail88/My_Testn
 ### Adding seeds and peers
 ```bash
 peers="7820d73c4449e0e4328c9fc4437b00aef8de33c2@5.161.195.113:26656"
-sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/; s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.kyve/config/config.toml
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.kyve/config/config.toml
 ```
 ### Config pruning
 ```bash
