@@ -98,3 +98,22 @@ curl -s localhost:26657/status | jq .result.sync_info.catching_up
 kyved q bank balances <<address>>
 ```
 > If your wallet does not show any balance than probably your node is still syncing. Please wait until it finish to synchronize and then continue
+
+### Creating a validator (Replace: <<node_name>>, <<wallet_name>>) 
+```bash
+kyved tx staking create-validator \
+--moniker="<<node_name>>" \
+--amount=100000000tkyve \
+--pubkey=$(kyved tendermint show-validator) \
+--chain-id=kaon-1 \
+--commission-max-change-rate=0.01 \
+--commission-max-rate=0.20 \
+--commission-rate=0.05 \
+--min-self-delegation=1 \
+--from=<<wallet_name>> \
+--fees=3000000tkyve \
+--gas=auto --gas-adjustment 1.5 \
+--yes 
+```
+
+## Don't forget to buckup *priv_validator_key.json* file  
