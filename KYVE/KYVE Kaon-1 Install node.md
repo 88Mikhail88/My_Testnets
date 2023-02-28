@@ -116,4 +116,4 @@ kyved tx staking create-validator \
 --yes 
 ```
 
-## Don't forget to buckup *priv_validator_key.json* file  
+### Don't forget to buckup priv_validator_key.json file  
