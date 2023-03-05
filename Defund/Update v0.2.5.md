@@ -10,7 +10,7 @@
 
 ### Manual Upgrade
 ```bash
-sudo systemctl stop defundd
+sudo systemctl stop defund
 
 cd
 rm -rf defund
