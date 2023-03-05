@@ -18,7 +18,7 @@ git clone https://github.com/defund-labs/defund.git
 cd defund
 git checkout v0.2.5
 make build
-sudo mv $HOME/defund/build/defundd $(which defundd)
+sudo mv ./build/defundd /usr/local/bin/
 sudo systemctl start defund
 journalctl -u defund -f -o cat
 ```
