@@ -10,5 +10,15 @@
 
 ### Manual Upgrade
 ```bash
-when proposl status: Passed
+cd $HOME
+git clone https://github.com/KYVENetwork/chain/
+cd chain
+git checkout v1.0.0-rc1
+make install
+kyved version --long | head
+
+# version: v1.0.0-rc1
+# commit: cedc217027c2b7e3d2b7077abe7a4fa4442a19c4
+
+systemctl restart kyved && journalctl -u kyved -f -o cat
 ```
