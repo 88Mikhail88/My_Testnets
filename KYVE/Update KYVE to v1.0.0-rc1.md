@@ -11,10 +11,13 @@
 ### Manual Upgrade
 ```bash
 cd $HOME
-git clone https://github.com/KYVENetwork/chain/
-cd chain
-git checkout v1.0.0-rc1
-make install
+rm -rf /usr/local/bin/kyved
+
+wget https://github.com/KYVENetwork/chain/releases/download/v1.0.0-rc1/kyved_linux_amd64.tar.gz
+tar -xvzf kyved_linux_amd64.tar.gz
+chmod +x kyved
+sudo mv kyved /usr/local/bin/kyved
+
 kyved version --long | head
 
 # version: v1.0.0-rc1
