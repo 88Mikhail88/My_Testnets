@@ -11,12 +11,14 @@
 ### Manual Upgrade
 ```bash
 cd $HOME
+systemctl stop kyved
 rm -rf /usr/local/bin/kyved
 
 wget https://github.com/KYVENetwork/chain/releases/download/v1.0.0-rc1/kyved_linux_amd64.tar.gz
 tar -xvzf kyved_linux_amd64.tar.gz
 chmod +x kyved
 sudo mv kyved /usr/local/bin/kyved
+rm -rf kyved_linux_amd64.tar.gz
 
 kyved version --long | head
 
