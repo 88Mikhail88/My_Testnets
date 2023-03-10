@@ -9,9 +9,9 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ### Download and unpacking binaries
 ```bash
 cd $HOME
-wget https://github.com/massalabs/massa/releases/download/TEST.20.0/massa_TEST.20.0_release_linux.tar.gz
-tar zxvf massa_TEST.20.0_release_linux.tar.gz
-rm -rf massa_TEST.20.0_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.20.1/massa_TEST.20.1_release_linux.tar.gz
+tar zxvf massa_TEST.20.1_release_linux.tar.gz
+rm -rf massa_TEST.20.1_release_linux.tar.gz
 ```
 ### Add ip in config.toml
 ```bash
@@ -102,6 +102,14 @@ cd /$HOME/massa/massa-client/ && ./massa-client -p Your_Password get_status
 
 # request status in MassaBot discord
 info
+```
+
+### Delete Massa node
+```bash
+sudo systemctl stop massad
+rm -rf $HOME/massa
+rm -rf /etc/systemd/system/massad.service
+rm -rf /etc/systemd/system/multi-user.target.wants/massad.service
 ```
 
 ![](https://github.com/88Mikhail88/My_Images/blob/main/Massa/Screenshot_10.png)
