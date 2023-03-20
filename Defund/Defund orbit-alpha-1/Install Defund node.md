@@ -29,6 +29,11 @@ cd $HOME
 > Make up your own name for the node and replace it with <<node_name>>
 ```bash
 defundd init <<node_name>> --chain-id orbit-alpha-1
+
+cd $HOME/.defund/config
+
+curl -s https://raw.githubusercontent.com/defund-labs/testnet/main/orbit-alpha-1/genesis.json > ~/.defund/config/genesis.json
+cd
 ```
 ### Adding seeds and peers
 ```bash
