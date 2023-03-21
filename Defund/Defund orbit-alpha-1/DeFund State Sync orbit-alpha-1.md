@@ -6,7 +6,7 @@ sudo systemctl stop defund || sudo systemctl stop defundd
 defundd tendermint unsafe-reset-all --home $HOME/.defund --keep-addr-book
 
 
-PEERS="8f28ea4ae9be0b65f67378b384697637b355beb5@5.161.42.244:26656"
+PEERS="8f28ea4ae9be0b65f67378b384697637b355beb5@65.108.4.233:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.defund/config/config.toml
 
 SNAP_RPC="http://65.108.4.233:26657"
