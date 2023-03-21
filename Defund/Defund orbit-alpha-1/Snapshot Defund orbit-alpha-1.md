@@ -6,6 +6,8 @@
 
 sudo systemctl stop defund || sudo systemctl stop defundd
 
+cp $HOME/.defund/data/priv_validator_state.json $HOME/.defund/priv_validator_state.json.backup 
+
 defundd tendermint unsafe-reset-all --home $HOME/.defund --keep-addr-book
 
 wget http://5.161.195.113:8000/defund-archive.tar.gz
