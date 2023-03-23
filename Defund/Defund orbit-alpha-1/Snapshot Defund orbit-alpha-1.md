@@ -1,6 +1,6 @@
 ## Snapshot Defund orbit-alpha-1
 ### Updated every 24 hours 
-#### Archive update time 1:40pm UTC
+#### Archive update time 12:06pm UTC 23.03.2023
 
 ```bash
 #pruning 100/0/10
