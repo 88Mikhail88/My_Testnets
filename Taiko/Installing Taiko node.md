@@ -23,9 +23,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 ### Install Taiko
-[Alchemy](https://www.alchemy.com/)
-
-[Sepolia faucet](https://sepoliafaucet.com/)
+[Alchemy](https://www.alchemy.com/) | [Sepolia faucet](https://sepoliafaucet.com/) | [Explorer](https://explorer.a2.taiko.xyz/)
 
 ```bash
 git clone https://github.com/taikoxyz/simple-taiko-node.git
