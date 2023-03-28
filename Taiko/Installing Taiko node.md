@@ -40,7 +40,7 @@ L1_ENDPOINT_WS=wss://ALCHEMY_ENDPOINT_WSS
 ENABLE_PROVER=true (prover) or false (node)
 L1_PROVER_PRIVATE_KEY=YOUR_PRIVATE_KEY_Metamask
 ```
-### Run node
+#### Run node
 ```bash
 docker compose up -d
 
