@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install htop mc curl tar wget jqgit make ncdu jq chrony net-tools iotop nload -y
 
 wget --no-check-certificate https://get.gear.rs/gear-nightly-linux-x86_64.tar.xz
-tar -xvzf gear-nightly-linux-x86_64.tar.xz
+tar xvf gear-nightly-linux-x86_64.tar.xz
 chmod +x gear
 mv gear /usr/local/bin/gear
 rm -rf gear-nightly-linux-x86_64.tar.xz
