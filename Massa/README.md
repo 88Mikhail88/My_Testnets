@@ -1,4 +1,5 @@
-## Install Massa node TEST.20.1
+## Install Massa node TEST.20.2
+##### Scoring will start on March 24, 11:06am UTC. Scoring will end on March 29, 8:14pm UTC
 
 ### Update packages, install dependencies
 ```bash
