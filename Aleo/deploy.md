@@ -26,11 +26,14 @@ cd leo
 cargo install --path .
 ```
 ### Test tokens 
-Generate wallet [Aleo](https://aleo.tools/) and copy `Private Key`, `View Key`, `Address`
-
+- Generate wallet [Aleo](https://aleo.tools/) and copy `Private Key`, `View Key`, `Address`
+- Twitter Tokens
+```bash
+@AleoFaucet send 10 credits to Your_Wallet_Address
+```
 ![](https://github.com/88Mikhail88/My_Images/blob/main/Aleo/Screenshot_1.png)
 ```bash
-# Edit Your_Wallet_Address Your_Privat_Key
+# Cli Tokens: Edit Your_Wallet_Address Your_Privat_Key
 snarkos developer execute credits.aleo mint Your_Wallet_Address 100000000u64 \
 --private-key Your_Privat_Key \
 --query "https://vm.aleo.org/api" \
