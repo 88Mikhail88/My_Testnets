@@ -32,8 +32,8 @@ cd $HOME
 ```bash
 cascadiad <<node_name>> --chain-id cascadia_6102-1
 
-wget -O $HOME/.cascadiad/config/genesis.json https://raw.githubusercontent.com/88Mikhail88/My_Testnets/main/Casadia/addrbook.json
-wget -O $HOME/.cascadiad/config/addrbook.json https://raw.githubusercontent.com/88Mikhail88/My_Testnets/main/Casadia/addrbook.json
+wget -O $HOME/.cascadiad/config/genesis.json https://raw.githubusercontent.com/88Mikhail88/My_Testnets/main/Cascadia/genesis.json
+wget -O $HOME/.cascadiad/config/addrbook.json https://raw.githubusercontent.com/88Mikhail88/My_Testnets/main/Cascadia/addrbook.json
 ```
 #### Config pruning
 ```bash
