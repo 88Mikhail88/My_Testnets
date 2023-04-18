@@ -1,4 +1,4 @@
-# Casadia
+# Cascadia
 
 
 ## [Website](https://cascadia.foundation/) | [Discord](https://discord.gg/cascadia) | [Twitter](https://twitter.com/CascadiaSystems) | [GitHub](https://github.com/CascadiaFoundation) | [Gitbook](https://cascadia.gitbook.io/) | [Medium](https://medium.com/@CascadiaFoundation)
