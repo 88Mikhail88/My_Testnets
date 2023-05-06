@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#reset network MM
-
-#install
-
 sudo apt-get install curl && sudo apt update -y
 sudo apt install docker.io
 sleep 2s
