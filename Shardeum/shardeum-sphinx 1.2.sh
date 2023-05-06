@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#rebuild + reset network MM
+#reset network MM
 
-#установить
+#install
 
 sudo apt-get install curl && sudo apt update -y && sudo apt install docker.io && docker --version
 
