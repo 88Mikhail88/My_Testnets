@@ -10,9 +10,9 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ### Download and unpacking binaries
 ```bash
 cd $HOME
-wget https://github.com/massalabs/massa/releases/download/TEST.22.2/massa_TEST.22.2_release_linux.tar.gz
-tar zxvf massa_TEST.21.0_release_linux.tar.gz
-rm -rf massa_TEST.21.0_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.23.0/massa_TEST.23.0_release_linux.tar.gz
+tar zxvf massa_TEST.23.0_release_linux.tar.gz
+rm -rf massa_TEST.23.0_release_linux.tar.gz
 ```
 ### Add ip in config.toml
 ```bash
