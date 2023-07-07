@@ -1,5 +1,4 @@
-## Install Massa node TEST.23.2
-##### Scoring will start on April 10, 05:48pm UTC. The scoring will end on April 28 2023, 11:53 UTC.
+## Install Massa node TEST.24.1
 
 ### Update packages, install dependencies
 ```bash
@@ -10,9 +9,9 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ### Download and unpacking binaries
 ```bash
 cd $HOME
-wget https://github.com/massalabs/massa/releases/download/TEST.23.2/massa_TEST.23.2_release_linux.tar.gz
-tar zxvf massa_TEST.23.2_release_linux.tar.gz
-rm -rf massa_TEST.23.2_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.24.1/massa_TEST.24.1_release_linux.tar.gz
+tar zxvf massa_TEST.24.1_release_linux.tar.gz
+rm -rf massa_TEST.24.1_release_linux.tar.gz
 ```
 ### Add ip in config.toml
 ```bash
