@@ -1,4 +1,4 @@
-## Install Massa node TEST.24.1
+## Install Massa node TEST.25.0
 
 ### Update packages, install dependencies
 ```bash
