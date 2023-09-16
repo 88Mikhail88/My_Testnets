@@ -86,8 +86,6 @@ selfchaind keys add <<wallet_name>> --recover
 ```bash
 curl -s localhost:26657/status | jq .result.sync_info.catching_up
 ```
-### After the node is synchronized you need to request test tokens.
-> To do this, go to Faucet in discord https://discord.gg/qR6y2wkp3e
 
 ### Check your wallet balance
 ```bash
