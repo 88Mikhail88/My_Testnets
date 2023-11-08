@@ -40,6 +40,11 @@ Discord `discord`
 ##### Let's go and create according to the model https://github.com/AleoHQ/leo/issues
 ##### We put a star on the repository
 
+```bash
+# add commit
+@all-contributors please add @NAME for Tutorials.
+```
+
 ##### delete
 ```bash
 cd && rm -rf leo-v1.10.0-x86_64-unknown-linux-musl.zip tictactoe
