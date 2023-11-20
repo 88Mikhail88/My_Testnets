@@ -9,9 +9,11 @@ echo 'export ALCHEMY='$ALCHEMY >> $HOME/.bash_profile
 
 
 ```bash
-sudo apt update && sudo apt-get install software-properties-common -y
+sudo apt update
+sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo apt update && sudo apt install curl git tmux build-essential libgmp-dev pkg-config libssl-dev libzstd-dev protobuf-compiler -y
+sudo apt update
+sudo apt install curl git tmux build-essential libgmp-dev pkg-config libssl-dev libzstd-dev protobuf-compiler -y
 sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
